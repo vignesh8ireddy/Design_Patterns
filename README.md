@@ -106,7 +106,13 @@ architecture.
          * Solutions:
            1. Using synchronized static factory method
            2. Using synchronized block in the static factory method
-           3. Using synchronized block with double null checking (Best)
+           3. Using synchronized block with double null checking
            4. Using eager instantiation
-           5. Using inner class based lazy instantiation (best2)
-           6. Using ENUM style singleton (best3)
+           5. Using inner class based lazy instantiation
+           6. Using ENUM style singleton
+      2. Cloning
+         * Solution: Override clone() method of Object class in the singleton class and restricting cloning.
+      3. Serializing and Deserializing
+         * Solution: Write the readResolve() method in the singleton class restricting its Deserializing.
+      4. Reflection API
+      5. Custom Class Loader

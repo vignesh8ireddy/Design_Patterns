@@ -1,5 +1,7 @@
 package com.vignesh.test;
 
+import com.vignesh.gof.Printer;
+
 //This test case in multithreaded environment fails, singleton design pattern is broken here
 public class SingletonClassTest2 {
     public static void main(String[] args) {
@@ -12,8 +14,17 @@ public class SingletonClassTest2 {
         t2.start();
         t3.start();
     }
+
 }
 
+class TicketBookingOperation implements Runnable{
+    @Override
+    public void run() {
+        System.out.println("TicketBookingOperation.run()");
+        Printer printer = Printer.getInstance();
+        System.out.println("printer.hashCode():: "+printer.hashCode());
+    }
+}
 
 /*
 Output::
