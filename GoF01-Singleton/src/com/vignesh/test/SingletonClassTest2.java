@@ -1,6 +1,6 @@
 package com.vignesh.test;
 
-import com.vignesh.gof.Printer;
+import com.vignesh.singleton.Printer;
 
 //This test case in multithreaded environment fails, singleton design pattern is broken here
 public class SingletonClassTest2 {

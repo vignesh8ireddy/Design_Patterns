@@ -1,6 +1,6 @@
 package com.vignesh.test;
 
-import com.vignesh.gof.Printer2;
+import com.vignesh.singleton.Printer2;
 //import com.vignesh.gof.Printer3;
 
 //This test case passes Printer2 singleton class (and also Printer3 singleton class)

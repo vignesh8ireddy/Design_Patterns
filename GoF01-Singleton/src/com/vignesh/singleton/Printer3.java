@@ -1,4 +1,4 @@
-package com.vignesh.gof;
+package com.vignesh.singleton;
 
 public class Printer3 {
 

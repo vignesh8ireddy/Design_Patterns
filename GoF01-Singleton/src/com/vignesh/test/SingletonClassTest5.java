@@ -1,6 +1,6 @@
 package com.vignesh.test;
 
-import com.vignesh.gof.Printer;
+import com.vignesh.singleton.Printer;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

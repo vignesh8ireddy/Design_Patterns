@@ -1,6 +1,6 @@
 package com.vignesh.test;
 
-import com.vignesh.gof.Printer;
+import com.vignesh.singleton.Printer;
 
 //This test case fails singleton design pattern using cloning
 public class SingletonClassTest4 {

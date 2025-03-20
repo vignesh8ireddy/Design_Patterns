@@ -1,6 +1,6 @@
 package com.vignesh.test;
 
-import com.vignesh.gof.Printer;
+import com.vignesh.singleton.Printer;
 
 import java.lang.reflect.Constructor;
 
@@ -9,7 +9,7 @@ public class SingletonClassTest6 {
 
     public static void main(String[] args) {
         try {
-            Class printerClass = Class.forName("com.vignesh.gof.Printer");
+            Class printerClass = Class.forName("com.vignesh.singleton.Printer");
             Constructor[] constructors = printerClass.getDeclaredConstructors();
             constructors[0].setAccessible(true);
             Printer p1 = (Printer) constructors[0].newInstance();

@@ -1,4 +1,4 @@
-package com.vignesh.gof;
+package com.vignesh.singleton;
 
 public class Printer2 {
     private static Printer2 INSTANCE = new Printer2();

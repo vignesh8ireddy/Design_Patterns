@@ -1,9 +1,10 @@
-package com.vignesh.gof;
+package com.vignesh.singleton;
 
 import com.vignesh.util.PrintUtil;
 
 import java.io.Serial;
 
+//A minimum standards singleton class
 public class Printer extends PrintUtil {
     private static Printer INSTANCE;
     @Serial
@@ -91,7 +92,6 @@ public class Printer extends PrintUtil {
 
 
 /*
-
 The above Printer class is implemented using minimum standards singleton design pattern.
 The above singleton design pattern breaks in the following scenarios:
 1. Multithreaded Environment
