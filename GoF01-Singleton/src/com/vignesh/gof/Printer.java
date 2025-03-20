@@ -10,7 +10,6 @@ public class Printer extends PrintUtil {
     private static final long serialVersionUID = 1L;
     private static boolean isInstantiated = false;
     private Printer() {
-        System.out.println("Printer:: 0-Parameter Constructor");
 
         //Restricting Reflection API from creating more than one instance for the singleton class
         /*if(isInstantiated) {
@@ -19,8 +18,9 @@ public class Printer extends PrintUtil {
         }
         else {
             isInstantiated = true;
-            System.out.println("Printer:: 0-Parameter Constructor");
         }*/
+
+        System.out.println("Printer:: 0-Parameter Constructor");
 
     }
 
@@ -47,7 +47,7 @@ public class Printer extends PrintUtil {
         return INSTANCE;
     }*/
 
-    //This is best of creating instance for preserving singleton nature in a multithreaded environment
+    //This is the best way of creating instance for preserving singleton nature in a multithreaded environment
     /*public static Printer getInstance() {
         if(INSTANCE == null) {
             synchronized (Printer.class) {
@@ -106,7 +106,7 @@ Solution: Override clone() method of Object class in the singleton class and res
 3. Serializing and Deserializing
 Solution: Write the readResolve() method in the singleton class restricting its Deserializing.
 4. Using Reflection API
-Solution: Check if an instance is already available or not and according throw RuntimeException in the private
-constructor.
+Solution: In the private constructor check if an instance is already available or not and accordingly throw
+RuntimeException.
 5. Using Custom Class Loader
  */

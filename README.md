@@ -115,4 +115,6 @@ architecture.
       3. Serializing and Deserializing
          * Solution: Write the readResolve() method in the singleton class restricting its Deserializing.
       4. Reflection API
+         * Solution: In the private constructor check if an instance is already available or not and accordingly throw 
+         RuntimeException.
       5. Custom Class Loader
