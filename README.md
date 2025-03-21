@@ -122,3 +122,46 @@ architecture.
         * We cannot make a perfect singleton class because it can be broken with custom ClassLoader subsystem.
         * 3 main uses cases of singleton design pattern are a class with no state, fixed read-only state and shareable data.
     2. Factory Pattern
+       <pre>
+       Problem: superclass and super-interface reference variables can hold objects of their subclasses, client creating 
+                object of appropriate subclass for a superclass or super-interface reference variable is not a good
+                practice, because expecting client to have all the information about many different subclasses is not good.
+       Solution: For every such superclass and super-interface create a Factory class with factory methods that can
+                create objects of appropriate class.
+       </pre>
+       * Factory class internally contains static or non-static factory method that provides abstraction on object 
+       creation.
+       * Factory method returns one of the several subclass' object based on the data we pass.
+       * DriverManager is Factory class with getConnection() factory method, it gives Connection(I) object of many
+       databases such as MySql, PostGreSql, MongoDB, etc. based on the parameters we pass into the method.
+       * con.createStatement(), st.executeQuery(), and many of the JDBC methods are factory methods.
+       * factory.getBean() in spring framework is also a factory method creating object of a spring bean providing
+       abstraction over the creation process.
+       * In real-time practices, factory class contains static factory method because client is not interested in creating
+       Factory class object and moreover, factory class would be developed by one developer and client apps would be
+       developed by some other developers, so client apps can only have abstraction of objection creation using factory.
+       * Here are some familiar static factory methods: 
+         * Thread t = Thread.currentThread(); //returns object of its own class i.e Thread
+         * Class c = Class.forName(); //returns object of its own class. i.e java.lang.Class
+         * Calender cal = Calender.getInstance() //returns object of related class i.e GreogorianCalender class which subclass of
+         Calender
+         * Properties properties = System.getProperties() // returns object of java.util.Properties class which is no
+         way related to java.lang.System class
+         * Connection con = DriverManager.getConnection() // returns object of Connection type which no way related to 
+         the DriverManager class
+       * Here are some familiar non-static factory methods:
+         * String s = new String("hello").concat(" world");
+       * 3 types of factory pattern,
+         * Factory Pattern : Provides Abstraction on object creation process while creating object of one of the several
+         related classes based on the data given.
+         * Factory Method Pattern : Defines standards in object creation when multiple factories are creating objects
+         for same family classes
+         * Abstract Factory Pattern : Super factory or factory of factories i.e make sures the objects created belong to
+         the same family/environment
+    3. Template Method Pattern
+       <pre>
+       Problem: 
+       </pre>
+       * Template Method Pattern is a method in the super class calling multiple methods in a sequence to complete the
+       job. In those multiple methods the common methods will be implemented in super class itself whereas the specific
+       the subclass to implement
