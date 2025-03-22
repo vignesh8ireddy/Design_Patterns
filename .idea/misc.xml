@@ -10,6 +10,9 @@
         <option value="$PROJECT_DIR$/GoF03-FactoryPatternAbstract/pom.xml" />
         <option value="$PROJECT_DIR$/GoF02-FactoryPatternAbstract/pom.xml" />
         <option value="$PROJECT_DIR$/GoF03-TemplateMethod/pom.xml" />
+        <option value="$PROJECT_DIR$/GoF04-Builder/pom.xml" />
+        <option value="$PROJECT_DIR$/GoF05-Strategy/pom.xml" />
+        <option value="$PROJECT_DIR$/GoF06-Adapter/pom.xml" />
       </list>
     </option>
   </component>

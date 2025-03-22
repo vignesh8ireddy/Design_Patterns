@@ -159,9 +159,36 @@ architecture.
          * Abstract Factory Pattern : Super factory or factory of factories i.e make sures the objects created belong to
          the same family/environment
     3. Template Method Pattern
-       <pre>
-       Problem: 
-       </pre>
        * Template Method Pattern is a method in the super class calling multiple methods in a sequence to complete the
        job. In those multiple methods the common methods will be implemented in super class itself whereas the specific
        the subclass to implement
+    4. Builder Pattern
+       * Creating a complex class directly by defining is not a good practice, builder design pattern says build complex
+       class by combining multiple single small classes
+       * Main components of Builder Pattern:
+         * Product (Let's say House)
+         * Builder Interface (HouseBuilder)
+         * ConcreteBuilder (WoodenHouseBuilder, ConcreteHouseBuilder)
+         * Director (CivilEngineer or HouseArchitect)
+         Product is created by using Director which in turn uses Builder
+    5. Strategy Pattern
+       * While developing classes that collaborate/relate with each other i.e  communicate or interact or contain one 
+       another it's better to following the following 3 rules
+         1. Favour Composition (HAS-A relation) over Inheritance (IS-A relation)
+            Limitations of Inheritance:
+            * With inheritance code is fragile.
+            * Unit testing the code with inheritance is complex and tedious.
+            * Not all programming languages support multiple inheritance.
+         2. Code to Interfaces/Abstract Classes (i.e Never code to implementation classes or Concrete Classes)
+            * Instead of tight coupling go for loose coupling
+         3. Code must be open for extension but must be closed for modification.
+            * Close code for modification: make the class as final or make all the methods in the class as final.
+            * Open for extension: Rule 1 and Rule 2
+       * Main components of Strategy Pattern:
+         * Target class
+         * Multiple Dependant classes
+         * Factory class
+    6. Adapter Pattern
+       * This design pattern makes interaction between two incompatible classes possible and efficient.
+    7. Decorator Pattern
+       * Using inheritance to add new features on the top of a class is sometimes not necessary, so go for Composition.

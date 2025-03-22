@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="GoF05-Strategy" />
+        <module name="GoF04-Builder" />
+        <module name="GoF06-Adapter" />
         <module name="GoF03-TemplateMethod" />
         <module name="GoF02-Factory" />
         <module name="GoF02-FactoryMethod" />

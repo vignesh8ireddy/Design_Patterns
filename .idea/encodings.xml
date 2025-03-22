@@ -9,5 +9,11 @@
     <file url="file://$PROJECT_DIR$/GoF02-FactoryPatternAbstract/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/GoF03-TemplateMethod/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/GoF03-TemplateMethod/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GoF04-Builder/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GoF04-Builder/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GoF05-Strategy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GoF05-Strategy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GoF06-Adapter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GoF06-Adapter/src/main/resources" charset="UTF-8" />
   </component>
 </project>
