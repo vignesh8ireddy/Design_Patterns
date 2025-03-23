@@ -11,6 +11,7 @@
         <module name="GoF06-Adapter" />
         <module name="GoF03-TemplateMethod" />
         <module name="GoF02-Factory" />
+        <module name="GoF07-Decorator" />
         <module name="GoF02-FactoryMethod" />
         <module name="GoF02-FactoryPatternAbstract" />
       </profile>

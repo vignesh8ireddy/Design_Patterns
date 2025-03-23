@@ -190,5 +190,15 @@ architecture.
          * Factory class
     6. Adapter Pattern
        * This design pattern makes interaction between two incompatible classes possible and efficient.
-    7. Decorator Pattern
+    7. Decorator Pattern (also called Wrapper Pattern)
        * Using inheritance to add new features on the top of a class is sometimes not necessary, so go for Composition.
+       * Main components of Decorator pattern
+         * Component Interface: The common interface implemented by all concrete classes and decorator classes to make
+         them as same type
+         * Concrete component class: Classes implementing component interface providing basic objects on which we may
+         need to add the additional functionalities
+         * Abstract Decorator: The common and abstract super class for all the decorator classes implementing common
+         interface type variable as HAS-A property
+         * Concrete Decorator: Classes extending abstract decorator having logics to provide additional functionalities
+         for the concrete component classes objects
+    8. 

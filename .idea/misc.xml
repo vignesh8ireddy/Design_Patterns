@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/GoF04-Builder/pom.xml" />
         <option value="$PROJECT_DIR$/GoF05-Strategy/pom.xml" />
         <option value="$PROJECT_DIR$/GoF06-Adapter/pom.xml" />
+        <option value="$PROJECT_DIR$/GoF07-Decorator/pom.xml" />
       </list>
     </option>
   </component>
