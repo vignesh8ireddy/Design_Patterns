@@ -1,6 +1,6 @@
 package com.vignesh.deepCloningSolution.model;
 
-public class Book {
+public class Book implements Cloneable {
     private Integer bookId;
     private String bookName;
     private String bookStatus;

@@ -5,7 +5,7 @@ import com.vignesh.deepCloningSolution.model.Book;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class BookType {
+public abstract class BookType implements Cloneable {
     private String type;
     private List<Book> bookList = new ArrayList<>();
 

@@ -23,10 +23,7 @@ public class BookTypeFactory {
 
     public static BookType getBooks(String type) throws Exception {
 
-        if(type.equalsIgnoreCase("fiction")) {
-            return (BookType) cacheMap.get(type.toLowerCase()).clone();
-        }
-        else if(type.equalsIgnoreCase("biography")) {
+        if(type.equalsIgnoreCase("fiction") || type.equalsIgnoreCase("biography")) {
             return (BookType) cacheMap.get(type.toLowerCase()).clone();
         }
         else throw new IllegalArgumentException("Book Type Not Found.");
