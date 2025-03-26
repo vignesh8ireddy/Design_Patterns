@@ -9,6 +9,9 @@
         <module name="GoF05-Strategy" />
         <module name="GoF04-Builder" />
         <module name="GoF06-Adapter" />
+        <module name="GoF08-Flyweight" />
+        <module name="GoF09-Proxy" />
+        <module name="GoF10-Prototype" />
         <module name="GoF03-TemplateMethod" />
         <module name="GoF02-Factory" />
         <module name="GoF07-Decorator" />
