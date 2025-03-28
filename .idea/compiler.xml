@@ -19,5 +19,8 @@
         <module name="GoF02-FactoryPatternAbstract" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JEE01-DAO" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
